@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+
+<body>
+    <h3><%= message %></h3>
+    <form action="/students/create" method="POST">
+        First Name: <input type="text" name="firstName" title="firstName" /><br />
+        Last Name: <input type="text" name="lastName" title="lastName" /><br />
+        Date of Birth: <input type="date" name="dateOfBirth" title="dateOfBirth" /><br />
+        Tuition Fees: <input type="text" name="tuitionFees" title="tuitionFees" /><br />
+        <button type="submit">Add</button>
+    </form>
+</body>
+
+</html>

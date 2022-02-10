@@ -1,0 +1,13 @@
+npm install -g express-generator,
+express --view=ejs,
+npm install,
+
+npm install — save sequelize 
+
+npm install --save-dev sequelize-cli
+
+npx sequelize init
+
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string → με τα δικά μου atributes 
+
+npx sequelize db:migrate
