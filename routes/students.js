@@ -6,13 +6,13 @@ var router = express.Router();
 
 // list
 router.get('/', async function (req, res) {
-    // let customers = await getCustomers();
+    // let students = await getStudents();
     let students = await StudentDiamantogiannis.findAll();
     console.log(students);
     res.render('students/list',
         {
             title: 'Express 003 - Students page',
-            // list: getCustomers()
+            // list: getStudents()
             list: students
         });
 });
@@ -55,7 +55,7 @@ router.get('/delete', async function (req, res) {
 });
 
 
-async function getCustomers() {
+async function getStudents() {
     try {
         let dbResult = await dbLogin();
         if (dbResult) {
